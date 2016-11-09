@@ -100,7 +100,7 @@ def getTestCases(trid_file, name_list):
                 tc_key = int(line[0].strip())
                 # getting list of values from the line of the file
                 tc_val_list = line[1:]
-                # transforming string to list for last item of previous list (line 92)
+                # transforming string to list for last item of tc_val_list
                 tc_val_list[-1] = tc_val_list[-1].strip().split(',')
             # assigning value to key where value is a dictionary received from two lists
             tc_dict[tc_key] = dict(zip(name_list, tc_val_list))

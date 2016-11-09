@@ -16,7 +16,7 @@ if len(sys.argv) != 2:
 
 # if we want to see command-line argument
 print "The second command-line argument is: %s" % sys.argv[1]
-print sys.argv[0]
+
 # exit if format of accepted command-line argument does't match to required one
 # using regular expressions 
 matchObj = re.match (r'--testrun=(\d+)', sys.argv[1], re.I)
