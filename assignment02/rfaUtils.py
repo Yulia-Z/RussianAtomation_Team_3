@@ -11,7 +11,10 @@ import os
 import sys
 
 
-def getAppName(): 
+def getAppName():
+    """
+    Returns script name which was passed to the Python interpreter.
+    """ 
     app_name = os.path.basename(sys.argv[0]) 
     if app_name.endswith('.py'): 
         app_name = app_name[:-3]
